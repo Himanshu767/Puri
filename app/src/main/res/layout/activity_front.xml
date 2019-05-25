@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Front"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#FFFFFF">
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="start"
+        android:layout_marginStart="0dp"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav"
+        app:menu="@menu/drawer_view">
+
+    </android.support.design.widget.NavigationView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        app:titleTextColor="@color/white"
+        app:title="PURI"
+        android:background="#0C74D2"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="horizontal"
+         android:layout_weight="1"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="170dp"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/story"
+                android:layout_width="120dp"
+                android:layout_height="150dp"
+                android:background="@drawable/story" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="STORIES"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="170dp"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/temple"
+                android:layout_width="120dp"
+                android:layout_height="150dp"
+                android:background="@drawable/temple" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="TEMPLES"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="170dp"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/festivals"
+                android:layout_width="120dp"
+                android:layout_height="150dp"
+                android:background="@drawable/festivals" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="FESTIVALS"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="italic" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="170dp"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/culture"
+                android:layout_width="120dp"
+                android:layout_height="150dp"
+                android:background="@drawable/culture" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="CULTURE"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="170dp"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/ratha"
+                android:layout_width="120dp"
+                android:layout_height="150dp"
+                android:background="@drawable/ratha" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="RATHA YATRA"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="170dp"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/photo"
+                android:layout_width="120dp"
+                android:layout_height="150dp"
+                android:background="@drawable/photo" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="GALLERY"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="italic" />
+        </LinearLayout>
+      </LinearLayout>
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="170dp"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:weightSum="1"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/location"
+                android:layout_width="120dp"
+                android:layout_height="150dp"
+                android:background="@drawable/location" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="LOCATION"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="italic" />
+        </LinearLayout>
+     </LinearLayout>
+    </RelativeLayout>
+</android.support.v4.widget.DrawerLayout>

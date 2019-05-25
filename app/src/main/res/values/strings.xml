@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Puri</string>
+    <string name="Button2" translatable="false">हिंदी</string>
+    <string name="Button3" translatable="false">বাঙালি</string>
+    <string name="Button4" translatable="false">ଓଡ଼ିଆ</string>
+    <string name="title_activity_english" translatable="false">English</string>
+    <string name="open_drawer" translatable="false">Open navigation drawer</string>
+    <string name="close_drawer" translatable="false">Close navigation drawer</string>
+</resources>
